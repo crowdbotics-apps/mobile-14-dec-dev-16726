@@ -37,6 +37,12 @@ export default class Blank extends React.Component {
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/canoe_water_nature_221611.jpg"
         }}
       />
+      <Image
+        source={{
+          uri:
+            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/canoe_water_nature_221611.jpg"
+        }}
+      />
     </View>
   )
 }
@@ -46,5 +52,6 @@ const styles = StyleSheet.create({
   Text_2: {},
   Text_3: {},
   Button_4: {},
-  Image_5: {}
+  Image_5: {},
+  Image_6: {}
 })
