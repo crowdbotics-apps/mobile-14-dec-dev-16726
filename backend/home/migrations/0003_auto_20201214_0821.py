@@ -9,23 +9,33 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='drrtare',
+            model_name="customtext",
+            name="drrtare",
             field=models.GenericIPAddressField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='hgjg',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_hgjg', to='home.CustomText'),
+            model_name="customtext",
+            name="hgjg",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_hgjg",
+                to="home.CustomText",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='jhgjgjg',
-            field=models.ManyToManyField(blank=True, related_name='customtext_jhgjgjg', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="jhgjgjg",
+            field=models.ManyToManyField(
+                blank=True,
+                related_name="customtext_jhgjgjg",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]
